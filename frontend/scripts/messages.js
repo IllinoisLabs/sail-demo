@@ -1,5 +1,5 @@
 function getMessages() {
-  fetch(`${BASE_URL}/messages`)
+  fetch(`${BASE_URL}/messages`, { mode: "no-cors" })
     // parse json response
     .then((resp) => resp.json())
     .then((messages) => {
@@ -34,6 +34,7 @@ function postMessage(e) {
   // tell the api that we want to send this message
   fetch(`${BASE_URL}/messages`, {
     method: "POST",
+    mode: "no-cors",
     headers: {
       "Content-Type": "application/json",
     },
