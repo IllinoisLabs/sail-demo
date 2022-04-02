@@ -1,6 +1,6 @@
 const BASE_URL = "http://localhost:5000";
 
-fetch(`${BASE_URL}/welcome/test`)
+fetch(`${BASE_URL}/welcome/Message%20Board`)
   .then((resp) => {
     return resp.text();
   })
