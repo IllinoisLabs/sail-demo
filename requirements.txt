@@ -2,3 +2,7 @@ flask
 flask-cors
 python-dotenv
 better-profanity
+bson
+pymongo
+python-dotenv
+pymongo[srv]
