@@ -85,7 +85,7 @@ def get_messages():
         db[collection].insert_one(new_message)
         # Return the newly inserted message
         return jsonify(new_message)
-    
+
     return Response("Invalid method", status=400)
 
 
@@ -149,6 +149,7 @@ def censor_values(message):
         # Not sure how to censor this object.
         print(f"[ WARNING ]: Cannot censor object of type {type(message)}")
         return message
+
 
 # # # #
 # < Ignore this section >

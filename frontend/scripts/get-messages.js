@@ -6,8 +6,8 @@ function getMessages() {
         .map(
           (message) => `
         <div class="message">
-          <h2>From: ${message.author}</h2>
-          <p>${message.content}</p>
+          <h2>${message.content}</h2>
+          <p>From: ${message.author}</p>
         </div>
       `
         )
