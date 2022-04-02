@@ -27,9 +27,7 @@ function getMessages() {
 function postMessage(e) {
   e.preventDefault();
 
-  // get author and content from form
-  const author = document.getElementById("author").value;
-  const content = document.getElementById("content").value;
+  // TODO: get author and content from form
 
   // tell the api that we want to send this message
   fetch(`${BASE_URL}/messages`, {
@@ -37,7 +35,9 @@ function postMessage(e) {
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({ content, author }),
+    body: JSON.stringify({
+      // TODO: Add data to payload
+    }),
   })
     .then(() => getMessages())
     .catch((err) => {

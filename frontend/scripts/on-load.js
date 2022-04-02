@@ -1,6 +1,7 @@
 const BASE_URL = "http://localhost:5000";
 
-fetch(`${BASE_URL}/welcome/Message%20Board`)
+// TODO: Make the title "Message Board"
+fetch(`${BASE_URL}/welcome/Not%20%A%20Message%20Board`)
   .then((resp) => {
     return resp.text();
   })
